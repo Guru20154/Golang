@@ -1,0 +1,3 @@
+module mystuct
+
+go 1.23.2
