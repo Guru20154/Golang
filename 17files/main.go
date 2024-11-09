@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
+	// deprecated "io/ioutil"
 	"os"
 )
 
@@ -27,6 +28,8 @@ func main() {
 
 func readFile(filename string) {
 	data, err := os.ReadFile(filename)
+	// ioutil deprecated 
+	// data, err := ioutil.ReadFile(filename)
 	if err != nil {
 		panic(err)
 	}
